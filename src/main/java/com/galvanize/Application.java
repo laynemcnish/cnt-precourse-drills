@@ -56,6 +56,12 @@ class Address{
   }
 }
 
+interface Addressable {
+
+  List<Address> getAddresses();
+  void addAddress(Address a);
+}
+
 public class Application {
 
     public static void main(String[] args) {
