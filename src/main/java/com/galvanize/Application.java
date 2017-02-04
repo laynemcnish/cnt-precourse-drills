@@ -62,6 +62,28 @@ interface Addressable {
   void addAddress(Address a);
 }
 
+class Business implements Addressable {
+  private String name;
+  private ArrayList<Address> addresses;
+
+  public Business(String n) {
+    name = n;
+    addresses = new ArrayList<Address>();
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public List<Address> getAddresses() {
+    return addresses;
+  }
+
+  public void addAddress(Address a) {
+    addresses.add(a);
+  }
+}
+
 public class Application {
 
     public static void main(String[] args) {
